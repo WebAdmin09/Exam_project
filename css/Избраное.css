@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  src: url(../../fonts/18VAG\ Rounded\ M\ Normal.ttf);
+}
+.container {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}/*# sourceMappingURL=Избраное.css.map */
