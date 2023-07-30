@@ -1,6 +1,6 @@
 @use './base/typography';
 @use './layouts/container';
-@use './layouts/header';
+@use './layouts/navbar';
 @use './layouts/footer';
 @use './base/reset';
 @use './components/carousel';
@@ -17,4 +17,5 @@
 }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--main-bg-page, #FBF8EC);
 }
