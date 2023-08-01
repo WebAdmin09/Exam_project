@@ -408,4 +408,86 @@ body {
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: var(--main-bg-page, #FBF8EC);
+}
+
+.vakansiya__text {
+  margin-top: 27px;
+}
+.vakansiya__text .vakansiya__wrapper-spans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 159px;
+  max-height: 24px;
+}
+.vakansiya__text .vakansiya__wrapper-spans .vakansiya__span {
+  color: var(--main-on-surface, #414141);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.vakansiya__text .vakansiya__wrapper-heading {
+  margin-top: 0;
+  color: var(--main-on-surface, #414141);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.vakansiya__text .vakansiya__wrapper-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+.vakansiya__text .vakansiya__cards {
+  border-radius: 4px;
+  background: var(--main-surface, #fff);
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  max-width: 312px;
+  padding: 22px;
+}
+.vakansiya__text .vakansiya__cards .vakansiya__card-h3 {
+  margin-top: 0;
+  color: var(--main-on-surface, #414141);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.vakansiya__text .vakansiya__cards .vakansiya__card-span {
+  color: var(--main-on-surface, #414141);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.vakansiya__text .vakansiya__cards .vakansiya__card-title {
+  color: var(--main-on-surface, #414141);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.vakansiya__text .vakansiya__cards .vakansiya__card-call {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.vakansiya__text .vakansiya__cards .vakansiya__card-call .card__call-span {
+  color: var(--main-on-surface, #414141);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+@media (max-width: 665px) {
+  .vakansiya__text .vakansiya__wrapper-cards {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Вакансии.css.map */
