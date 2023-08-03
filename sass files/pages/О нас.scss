@@ -1,1 +1,96 @@
 @use "../global.scss";
+.about {
+    margin-top: 72px;
+    .about__spans {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 176px;
+        max-height: 24px;
+        .about-spn {
+            color: var(--main-on-surface, #414141);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+    .about__wrapper {
+        // display: flex;
+        position: relative;
+    }
+    .about__wrapper-text {
+        max-width: 400px;
+        .about__text-heading {
+            top: -50px;
+            left: 80px;
+            position: absolute;
+            color: var(--main-on-surface, #414141);
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 96px */
+        }
+        .about__text-title {
+            position: absolute;
+            max-width: 520px;
+            color: var(--main-primary, #f63);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            top: 100px;
+            left: 50px;
+        }
+    }
+    .about__wrapper-images {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+        justify-content: start;
+        .about__img-back {
+            z-index: -3;
+            position: relative;
+            left: 500px;
+        }
+        .about__img-fon {
+            position: absolute;
+            z-index: -2;
+            max-width: 1200px;
+        }
+        .about__img-people {
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    @media (max-width: 1180px) {
+        .about__wrapper-images {
+            .about__img-back {
+                left: 350px;
+            }
+            .about__img-fon {
+                max-width: 1050px;
+            }
+        }
+    }
+    @media (max-width: 1075px) {
+        .about__wrapper-images {
+            .about__img-back {
+                max-width: 600px;
+            }
+            .about__img-fon {
+                max-width: 950px;
+            }
+        }
+    }
+    @media (max-width: 976px) {
+        .about__wrapper-images {
+            .about__img-back {
+                max-width: 500px;
+            }
+        }
+    }
+}

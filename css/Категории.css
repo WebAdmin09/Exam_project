@@ -408,4 +408,82 @@ body {
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: var(--main-bg-page, #FBF8EC);
+}
+
+.katolog {
+  margin-top: 27px;
+}
+.katolog .about__spans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 120px;
+  max-height: 24px;
+}
+.katolog .about__spans .about-spn {
+  color: var(--main-on-surface, #414141);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  cursor: pointer;
+}
+.katolog .katolog-heading {
+  color: var(--main-on-surface, #414141);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.katolog .katalog__cards-images {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 630px) {
+  .katolog .katalog__cards-images .katalog__cards-img1 {
+    max-width: 500px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img10 {
+    max-width: 500px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img12 {
+    max-width: 500px;
+  }
+}
+@media (max-width: 530px) {
+  .katolog .katalog__cards-images .katalog__cards-img1 {
+    max-width: 400px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img10 {
+    max-width: 400px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img12 {
+    max-width: 400px;
+  }
+}
+@media (max-width: 430px) {
+  .katolog .katalog__cards-images .katalog__cards-img1 {
+    max-width: 300px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img10 {
+    max-width: 300px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img12 {
+    max-width: 300px;
+  }
+}
+@media (max-width: 330px) {
+  .katolog .katalog__cards-images .katalog__cards-img1 {
+    max-width: 250px;
+    min-height: 200px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img10 {
+    max-width: 250px;
+    min-height: 200px;
+  }
+  .katolog .katalog__cards-images .katalog__cards-img12 {
+    max-width: 250px;
+    min-height: 200px;
+  }
 }/*# sourceMappingURL=Категории.css.map */
