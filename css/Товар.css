@@ -538,4 +538,65 @@ body {
   border: 1px solid #f63;
   color: #fff;
   transition: 0.5s;
+}
+
+.tovar {
+  margin-top: 24px;
+}
+.tovar .tovar__wrapper-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 62%;
+}
+.tovar .tovar__wrapper-span {
+  color: var(--grayscale-hard, #8f8f8f);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+.tovar .tovar__wrapper-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tovar .tovar__text-heading {
+  color: var(--main-on-surface, #414141);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.tovar .tovar__images-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.tovar .tovar__images-text .tovar__text-yulduz {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.tovar .tovar__images-text .tovar__text-span {
+  color: var(--main-on-surface, #414141);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.tovar .tovar__images-text .tovar__text-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+.tovar .tovar__images-text .tovar__text-link .tovar__link-span {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }/*# sourceMappingURL=Товар.css.map */

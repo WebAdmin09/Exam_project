@@ -131,3 +131,64 @@
     }
 }
 ///////////AKSIYA FINISH///////////
+.tovar {
+    margin-top: 24px;
+    .tovar__wrapper-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 62%;
+    }
+    .tovar__wrapper-span {
+        color: var(--grayscale-hard, #8f8f8f);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 18px */
+    }
+    .tovar__wrapper-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tovar__text-heading {
+        color: var(--main-on-surface, #414141);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .tovar__images-text {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        .tovar__text-yulduz{
+            display: flex;
+            justify-content: space-around;
+            // max-width: 500px;
+            align-items: flex-start;
+        }
+        .tovar__text-span {
+            color: var(--main-on-surface, #414141);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        .tovar__text-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 25%;
+            .tovar__link-span {
+                color: var(--grayscale-hardest, #606060);
+                text-align: center;
+                font-family: Rubik;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+    }
+}
