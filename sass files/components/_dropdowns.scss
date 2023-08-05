@@ -1,0 +1,30 @@
+.categories__menu {
+    position: absolute;
+    background-color: #ffff;
+    padding: 25px 116px;
+    left: 0;
+    display: none;
+}
+.categories__menu-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 40px;
+    .categories__ul-li {
+        color: var(--main-on-surface, #414141);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        cursor: pointer;
+    }
+    .categories__ul-li:active{
+        color: red;
+    }
+}
+.hidden {
+    display: block;
+}

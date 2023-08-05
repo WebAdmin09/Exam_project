@@ -399,6 +399,40 @@ body {
     margin-bottom: -5px;
   }
 }
+.categories__menu {
+  position: absolute;
+  background-color: white;
+  padding: 25px 116px;
+  left: 0;
+  display: none;
+}
+
+.categories__menu-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.categories__menu-ul .categories__ul-li {
+  color: var(--main-on-surface, #414141);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+}
+.categories__menu-ul .categories__ul-li:active {
+  color: red;
+}
+
+.hidden {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -408,4 +442,37 @@ body {
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: var(--main-bg-page, #FBF8EC);
+}
+
+.catalog {
+  margin-top: 27px;
+}
+.catalog .catalog__wrapper-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 309px;
+}
+.catalog .catalog__text-h4 {
+  color: var(--main-on-surface, #414141);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  cursor: pointer;
+}
+.catalog .catalog__cards-h1 {
+  color: var(--main-on-surface, #414141);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 72px */
+}
+.catalog .catalog__main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  align-items: center;
 }/*# sourceMappingURL=Категория2.css.map */
