@@ -1,1 +1,85 @@
 @use "../global.scss";
+
+.main__wrapper {
+    // display: flex;
+    // align-items: center;
+    .products-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .search-input {
+        min-width: 600px;
+    }
+    .products-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .product-card-footer{
+        margin-top: -25px;
+     background-color: #fff;  
+    }
+    .products__name {
+        color: var(--main-on-surface, #414141);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        padding: 10px;
+    }
+    .products__title {
+        padding: 10px;
+        color: var(--main-on-surface, #414141);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 256px;
+    }
+    .products__price {
+        padding: 10px;
+        color: var(--main-on-surface, #414141);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .products__btn{
+        margin-top: 10px;
+        padding: 8px;
+        width: 240px;
+        color: var(--main-secondary, #70c05b);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        border: 1px solid #70c05b;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .products__btn:hover {
+        background-color: #f63;
+        border: 1px solid #f63;
+        color: #fff;
+        transition: 0.5s;
+    }
+}
+.noproducts {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    color: yellowgreen;
+    margin-top: 100px;
+}

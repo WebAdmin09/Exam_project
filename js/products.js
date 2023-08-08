@@ -1,29 +1,58 @@
-let discountProducts = products.filter((pi) => pi.discount).slice(-4);
+const productsRow = document.querySelector(".products-row");
+const searchInput = document.querySelector(".search-input");
+const totalProducts = document.querySelector(".total-products");
+
+let search = "";
+
+function getProductCard(pr) {
+  return `
+    <div class="product-card">
+      <div class="product-card-body">
+        <img
+          src="${pr.images[0]}"
+          alt="${pr.name}"
+        />
+      </div>
+      <div class="product-card-footer">
+        <h3><a class="products__name" href="product.html">${pr.name}</a></h3>
+        <p class="products__title"> ${pr.description} </p>
+        <p class="products__price">${`Price:`} ${pr.price}${`$`}</p>
+        <button class="products__btn"><b> Add to the cart </b></button>
+      </div>
+    </div>
+  `;
+}
+
+function getProducts() {
+  let results = products.filter(
+    (pr) =>
+      pr.name.toLowerCase().includes(search) ||
+      pr.description.toLowerCase().includes(search)
+  );
+
+  totalProducts.textContent = results.length;
 
 
-const cardsItemImages = document.createElement('div');
-cardsItemImages.style = 'cards__item-images';
+  productsRow.innerHTML = "";
 
-const cardsItemTexts = document.createElement('div');
-cardsItemTexts.style = 'cards__item-texts;'
+  if (results.length !== 0) {
+    results.map((pr) => {
+      productsRow.innerHTML += getProductCard(pr);
+    });
+  } else {
+    productsRow.innerHTML = `<div class="noproducts">
+      No products
+    </div>`;
+  }
+}
 
-const cardsImg = document.createElement('img');
-cardsImg.src = products.images;
-cardsImg.alt = products.name;
 
-const cardImgBtn = document.createElement('button');
-cardImgBtn.innerHTML = `-50%`;
+getProducts();
 
-const cardsTexth2 = document.createElement('h2');
-cardsTexth2.innerHTML = `${products.price}`
+searchInput.addEventListener("keyup", function () {
+  search = this.value.trim().toLowerCase();
+  getProducts();
+});
 
-const cardsTexth4 = document.createElement('h4');
-cardsTextSpan = document.createTextNode(products.description)
 
-const cardsDiscountImg = document.createElement('img');
-cardsDiscountImg.src = products.images;
-cardsDiscountImg.alt = products.name;
-
-const cardBtn = document.createElement('button');
-cardBtn.innerHTML = 'В корзину'
-
+  
