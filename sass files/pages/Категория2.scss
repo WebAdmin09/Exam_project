@@ -1,32 +1,119 @@
 @use "../global.scss";
-.catalog {
-    margin-top: 27px;
-    .catalog__wrapper-text {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 309px;
-    }
-    .catalog__text-h4 {
-        color: var(--main-on-surface, #414141);
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        cursor: pointer;
-    }
-    .catalog__cards-h1 {
-        color: var(--main-on-surface, #414141);
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 72px */
-    }
-    .catalog__main-cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        column-gap: 50px;
-        align-items: center;
-    }
-}
+// .catalog {
+//     margin-top: 27px;
+//     .catalog__wrapper-text {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         max-width: 309px;
+//     }
+//     .catalog__text-h4 {
+//         color: var(--main-on-surface, #414141);
+//         font-size: 12px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: 150%;
+//         cursor: pointer;
+//     }
+//     .catalog__cards-h1 {
+//         color: var(--main-on-surface, #414141);
+//         font-size: 48px;
+//         font-style: normal;
+//         font-weight: 700;
+//         line-height: 150%; /* 72px */
+//     }
+//     .catalog__main-cards{
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         column-gap: 50px;
+//         align-items: center;
+//     }
+// }
+// .katolog {
+//     margin-top: 27px;
+//     .about__spans {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         max-width: 120px;
+//         max-height: 24px;
+//         .about-spn {
+//             color: var(--main-on-surface, #414141);
+//             font-size: 12px;
+//             font-style: normal;
+//             font-weight: 400;
+//             line-height: 150%;
+//             cursor: pointer;
+//         }
+//     }
+//     .katolog-heading {
+//         color: var(--main-on-surface, #414141);
+//         font-size: 64px;
+//         font-style: normal;
+//         font-weight: 700;
+//         line-height: 150%;
+//     }
+//     .katalog__cards-images {
+//         // display: inline-flexbox;
+//         align-items: center;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+//     @media (max-width: 630px) {
+//         .katalog__cards-images {
+//             .katalog__cards-img1 {
+//                 max-width: 500px;
+//             }
+//             .katalog__cards-img10 {
+//                 max-width: 500px;
+//             }
+//             .katalog__cards-img12 {
+//                 max-width: 500px;
+//             }
+//         }
+//     }
+//     @media (max-width: 530px) {
+//         .katalog__cards-images {
+//             .katalog__cards-img1 {
+//                 max-width: 400px;
+//             }
+//             .katalog__cards-img10 {
+//                 max-width: 400px;
+//             }
+//             .katalog__cards-img12 {
+//                 max-width: 400px;
+//             }
+//         }
+//     }
+//     @media (max-width: 430px) {
+//         .katalog__cards-images {
+//             .katalog__cards-img1 {
+//                 max-width: 300px;
+//             }
+//             .katalog__cards-img10 {
+//                 max-width: 300px;
+//             }
+//             .katalog__cards-img12 {
+//                 max-width: 300px;
+//             }
+//         }
+//     }
+//     @media (max-width: 330px) {
+//         .katalog__cards-images {
+//             .katalog__cards-img1 {
+//                 max-width: 250px;
+//                 min-height: 200px;
+//             }
+//             .katalog__cards-img10 {
+//                 max-width: 250px;
+//                 min-height: 200px;
+//             }
+//             .katalog__cards-img12 {
+//                 max-width: 250px;
+//                 min-height: 200px;
+//             }
+//         }
+//     }
+// }
+
