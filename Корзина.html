@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,13 @@
     <title>Корзина</title>
     <link rel="stylesheet" href="../css/Корзина.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="navbar__wrapper">
                 <div class="navbar__wrapper-images">
-                    <a href="./index.html"><img class="logojon" src="../images/home-logojon.svg"
-                            alt="home-logojon"></a>
+                    <a href="./index.html"><img class="logojon" src="../images/home-logojon.svg" alt="home-logojon"></a>
                     <a href="./index.html"><img class="logojon-tablet" src="../images/home-logojon-tablet.svg"
                             alt="home-logojon-tablet"></a>
                 </div>
@@ -22,6 +23,49 @@
                         <button class="wrapper__menu-button btn"><span
                                 class="menu__btn-span">&#9776;</span>Каталог</button>
                         <span class="menu__btn-span-tablet">&#9776;</span>
+                        <div class="categories__menu">
+                            <!-- <ul class="categories__menu-ul">
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Молоко, сыр, яйцо</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Хлеб</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Фрукты и овощи</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Замороженные продукты</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Напитки</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Кондитерские изделия</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Чай, кофе</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Бакалея</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Здоровое питание</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Зоотовары</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Непродовольственные товары</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Детское питание</li>
+                                </a>
+                                <a href="./Категории.html">
+                                    <li class="categories__ul-li">Мясо, птица, колбаса</li>
+                                </a>
+                            </ul> -->
+                        </div>
                     </div>
                     <div class="form__search">
                         <form action="#">
@@ -44,9 +88,12 @@
                             <a href="./Все продукты.html"> <span class="logotip__item-span">продукты</span></a>
                         </div>
                         <div class="menu__logotip-item">
-                            <a href="./Корзина.html"><img class="logotip__item-img" src="../images/korzinka_icon.svg"
+                            <a href="./Корзина.html"><img class="logotip__item-img " src="../images/korzinka_icon.svg"
                                     alt="heart_img"> </a>
                             <a href="./Корзина.html"> <span class="logotip__item-span">Корзина</span></a>
+                        </div>
+                        <div>
+                            <a href="./Корзина.html"><span class="cart">0</span></a>
                         </div>
                     </div>
                     <div class="menu__dropdown-man">
@@ -70,5 +117,17 @@
             </div>
         </div>
     </nav>
+    <section class="cart__section">
+        <div class="container">
+            <div class="cart__card">
+
+            </div>
+        </div>
+    </section>
+    <script src="./js/categories-data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+
 </body>
+
 </html>

@@ -290,6 +290,15 @@ body {
   }
 }
 
+.categories__menu {
+  text-align: center;
+  width: 100%;
+}
+.categories__menu .menuDropdown-link {
+  margin-right: 50px;
+  color: #414141;
+}
+
 .footer {
   position: -webkit-sticky;
   position: sticky;

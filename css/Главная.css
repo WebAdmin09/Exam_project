@@ -290,6 +290,15 @@ body {
   }
 }
 
+.categories__menu {
+  text-align: center;
+  width: 100%;
+}
+.categories__menu .menuDropdown-link {
+  margin-right: 50px;
+  color: #414141;
+}
+
 .footer {
   position: -webkit-sticky;
   position: sticky;
@@ -1236,17 +1245,4 @@ body {
   border: 1px solid #f63;
   color: #fff;
   transition: 0.5s;
-}
-
-.card__heart {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  background-color: white;
-  z-index: 150;
-}
-
-.card__heart:hover {
-  color: #f63;
-  background-color: #f63;
 }/*# sourceMappingURL=Главная.css.map */

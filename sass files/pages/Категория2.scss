@@ -116,4 +116,106 @@
 //         }
 //     }
 // }
+.category__product {
+    margin-top: 27px;
+    .category__product-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 22%;
+        .category__text-span {
+            color: var(--grayscale-hard, #8f8f8f);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            cursor: pointer;
+        }
+    }
+    .category__product-heading {
+        color: var(--main-on-surface, #414141);
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .category__product-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        width: 70%;
+    }
+    .card__img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        max-width: 260px;
+    }
+    .cards__item{
+        z-index: 10;
+    }
+    .cards__item-texts {
+        padding: 15px;
+        margin-top: -20px;
+        background-color: #ffffff;
+        max-width: 262px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .cardPrice {
+        color: var(--main-on-surface, #414141);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .cardcatigory {
+        color: var(--main-on-surface, #414141);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .cardDescription {
+        margin-top: 0;
+        color: var(--main-on-surface, #414141);
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        max-width: 210px;
+        text-align: center;
+    }
+    .cardName {
+        color: var(--main-on-surface, #1d1c1c);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .cards__text-btn {
+        margin-top: 10px;
+        padding: 8px;
+        width: 240px;
+        color: var(--main-secondary, #70c05b);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        border: 1px solid #70c05b;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .cards__text-btn:hover {
+        background-color: #f63;
+        border: 1px solid #f63;
+        color: #fff;
+        transition: 0.5s;
+    }
+}
 

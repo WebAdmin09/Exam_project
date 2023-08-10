@@ -1,11 +1,5 @@
-const category = new URLSearchParams(location.search).get("category");
-
-
-let categoryProducts = products.filter((pr) => pr.category == category);
 
 const categorywrapper  = document.querySelector('.category__product-wrapper')
-
-
 
 function getProductCard(product) {
     const mainCard = document.createElement('div');
@@ -23,11 +17,11 @@ function getProductCard(product) {
     cardImg.alt = product.name;
     cardItemImg.appendChild(cardImg);
 
-    const cardImgHeart = document.createElement('img');
-    cardImgHeart.src = "../images/heart_img.svg";
-    cardImgHeart.alt = "heartimg";
-    cardItemText.appendChild(cardImgHeart);
-    cardImgHeart.className = ('card__heart')
+    // const cardImgHeart = document.createElement('img');
+    // cardImgHeart.src = "../images/heart_img.svg";
+    // cardImgHeart.alt = "heartimg";
+    // cardItemText.appendChild(cardImgHeart);
+    // cardImgHeart.className = ('card__heart')
 
 
     const cardPrice = document.createElement('h2')
@@ -60,6 +54,11 @@ function getProductCard(product) {
 
     return mainCard;
 }
+
+const category = new URLSearchParams(location.search).get("category");
+
+
+let categoryProducts = products.filter((product) => product.category == category);
 
 categoryProducts.map((product) =>{
     let card = getProductCard(product)
