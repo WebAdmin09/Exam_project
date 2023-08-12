@@ -1,12 +1,12 @@
-// menubuttonToggle.addEventListener('click', () => {
-//     menutabDropdown.classList.toggle('hidden');
-// })
-
 const product__wrapper = document.querySelector('.product__wrapper')
 const new__product = document.querySelector('.new__product');
 const popular__product = document.querySelector('.popular__product');
 
+
 function getProductCard(product) {
+    let check = cart.find((pr) => pr.id === product.id);
+    let check2 = cart__like.find((pr) => pr.id === product.id);
+
     const mainCard = document.createElement('div');
     mainCard.className = ('main__wrapper-cards')
 
@@ -22,11 +22,14 @@ function getProductCard(product) {
     cardImg.alt = product.name;
     cardItemImg.appendChild(cardImg);
 
-    // const cardImgHeart = document.createElement('img');
-    // cardImgHeart.src = "../images/heart_img.svg";
-    // cardImgHeart.alt = "heartimg";
-    // cardItemText.appendChild(cardImgHeart);
-    // cardImgHeart.className = ('card__heart')
+    const cardImgHeart = document.createElement('img');
+    cardImgHeart.src = "../images/heart-regularimages.svg";
+    cardImgHeart.alt = "heartimg";
+    cardItemText.appendChild(cardImgHeart);
+    cardImgHeart.className = ('card__heart')
+
+    cardImgHeart.addEventListener('click', () => favouriteToCard(product.id))
+
 
 
     const cardPrice = document.createElement('h2')
@@ -46,8 +49,12 @@ function getProductCard(product) {
     cardName.className = ('cardName');
 
     const cardBtn = document.createElement('button');
+    // cardBtn.className = check ? "active-cart" : "";
     cardBtn.innerHTML = "<b> В корзину </b>";
     cardBtn.className = ('cards__text-btn')
+
+    // cardBtn.addEventListener("click", () => addToCart(product.id));
+    cardBtn.addEventListener('click', () => addToCard(product.id))
 
     cardItemText.prepend(cardBtn)
     cardItemText.prepend(cardDescription)
@@ -56,61 +63,87 @@ function getProductCard(product) {
     cardItemText.prepend(cardPrice)
 
     mainCard.append(cardItemImg, cardItemText,);
-
     return mainCard;
 }
 
-function addToCart(id) {
-    let product = product.find((pr) => pr.id === id);
-    let check = cart.find((pr) => pr.id === id);
-  
+////Add to card for sale
+function addToCard(id) {
+    let product = products.find((pr) => pr.id === id);
+    let check = cart.find((pr) => pr.id === id)
+
     if (check) {
-      cart = cart.map((pr) => {
-        if (pr.id === id) {
-          pr.quantity++;
-        }
-        return pr;
-      });
+
+        cart = cart.map((pr) => {
+            if (pr.id === id) {
+                pr.quantity++;
+            }
+            return pr;
+        });
+
     } else {
-      product.quantity = 1;
-      cart.push(product);
+        product.quantity = 1
+        cart.push(product);
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-    getProducts();
-    getCartTotal();
-  }
 
-  function getProducts() {
-    //discountProduct//////////////////////
+    getCartTotal();
+}
+////Add to card favourite
+function favouriteToCard(id) {
+    let product = products.find((pr) => pr.id === id);
+    let check2 = cart__like.find((pr) => pr.id === id)
+
+    if(check2){
+        cart__like = cart__like.filter((el) => el.id !== id)
+    }else{
+        cart__like.push(product)
+    }
+    // if (check2) {
+
+    //     cart__like = cart__like.map((pr) => {
+    //         if (pr.id === id) {
+    //             pr.quantity++;
+    //         }
+    //         return pr;
+    //     });
+
+    // } else {
+    //     product.quantity = 1
+    //     cart__like.push(product);
+    // }
+    localStorage.setItem(favourite, JSON.stringify(cart__like));
+
+    getFavouriteTotal();
+}
+//discountProduct//////////////////////
+function getProducts() {
     let discountProducts = products.filter((pi) => pi.discount).slice(-4);
 
-discountProducts.map((product) => {
-    let card = getProductCard(product);
-    product__wrapper.append(card)
-});
+    discountProducts.map((product) => {
+        let card = getProductCard(product);
+        product__wrapper.append(card)
+    });
 
-//newProducts///////////////////////////
-let newProducts = products.slice(-4);
+    //newProducts///////////////////////////
+    let newProducts = products.slice(-4);
 
-newProducts.map((product) => {
-    let card = getProductCard(product);
-    new__product.append(card)
-})
+    newProducts.map((product) => {
+        let card = getProductCard(product);
+        new__product.append(card)
+    })
 
-//pipular//////////////////////
-let popularProducts = products
-    .toSorted((a, b) => a.rating - b.rating)
-    .slice(-4);
+    //pipular//////////////////////
+    let popularProducts = products
+        .toSorted((a, b) => a.rating - b.rating)
+        .slice(-4);
 
-popularProducts.map((product) => {
-    let card = getProductCard(product);
-    popular__product.append(card);
-})
+    popularProducts.map((product) => {
+        let card = getProductCard(product);
+        popular__product.append(card);
+    })
 
 }
 getProducts();
-
-
 //Article///////////////////
 
 const ArticleMain = document.querySelector('.status__cards-item');
@@ -181,6 +214,6 @@ function getArticleCard(article) {
 }
 
 articles.map((article) => {
-    let card =  getArticleCard(article);
+    let card = getArticleCard(article);
     ArticleMain.append(card);
 })

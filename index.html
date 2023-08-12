@@ -15,16 +15,18 @@
         <div class="container">
             <div class="navbar__wrapper">
                 <div class="navbar__wrapper-images">
-                    <a href="./index.html"><img class="logojon" src="../images/home-logojon.svg"
-                            alt="home-logojon"></a>
+                    <a href="./index.html"><img class="logojon" src="../images/home-logojon.svg" alt="home-logojon"></a>
                     <a href="./index.html"><img class="logojon-tablet" src="../images/home-logojon-tablet.svg"
                             alt="home-logojon-tablet"></a>
                 </div>
                 <div class="navbar__wrapper-menu">
                     <div class="menu__btn">
-                        <button class="wrapper__menu-button btn"><span
-                                class="menu__btn-span">&#9776;</span>Каталог</button>
-                        <span class="menu__btn-span-tablet">&#9776;</span>
+                        <div class="wrapper__menu-button">
+                            <span class="menu__btn-span">&#9776;</span>
+                            <a class="wrapper__menu-link" href="./Категории.html"><span
+                                    class="menu__btn-span">Каталог</span></a>
+                        </div>
+                        <span class="menu__btn-span-tablet wrapper__menu-button">&#9776;</span>
                         <div class="categories__menu">
                             <!-- <ul class="categories__menu-ul">
                                 <a href="./Категории.html">
@@ -72,16 +74,18 @@
                     <div class="form__search">
                         <form action="#">
                             <label for="search">
-                                <input class="form__search-inp" type="search" name="search" id="search"
-                                    placeholder="Найти товар">
+                                <input type="text" class="form__search-inp" placeholder="Search products..." />
                                 <img class="form__search-img" src="../images/search.svg" alt="search">
                             </label>
                         </form>
                     </div>
                     <div class="menu__logotip">
                         <div class="menu__logotip-item">
-                            <a href="./Избраное.html"><img class="logotip__item-img" src="../images/heart_img.svg"
-                                    alt="heart_img"></a>
+                            <div class="cart__wrapper">
+                                <span class="cartlike">0</span>
+                                <a href="./Избраное.html"><img class="logotip__item-img" src="../images/heart_img.svg"
+                                        alt="heart_img"></a>
+                            </div>
                             <a href="./Избраное.html"><span class="logotip__item-span">Избранное</span> </a>
                         </div>
                         <div class="menu__logotip-item">
@@ -90,30 +94,32 @@
                             <a href="./Все продукты.html"> <span class="logotip__item-span">продукты</span></a>
                         </div>
                         <div class="menu__logotip-item">
-                            <a href="./Корзина.html"><img class="logotip__item-img" src="../images/korzinka_icon.svg"
-                                    alt="heart_img"> </a>
+                            <div class="cart__wrapper">
+                                <span class="cart">0</span>
+                                <a href="./Корзина.html"><img class="logotip__item-img"
+                                        src="../images/korzinka_icon.svg" alt="heart_img"> </a>
+                            </div>
                             <a href="./Корзина.html"> <span class="logotip__item-span">Корзина</span></a>
-                        </div>
-                        <div>
-                            <a href="./Корзина.html"><span class="cart">0</span></a>
                         </div>
                     </div>
                     <div class="menu__dropdown-man">
                         <img class="menu__dropdown-img" src="../images/man_img.svg" alt="man_img">
                         <h3 class="menu__dropdown-h3">Алексей</h3>
                         <input class="dropdown-input" type="checkbox" name="check" id="check">
-                        <label for="check">
+                        <div class="login__div">
+                            <button class="login">Login</button>
+                        </div>
+                        <!-- <label for="check">
                             <img class="menu__dropdown-chevron-down" src="../images/chevron-down.svg"
                                 alt="chevron-down">
-                            <!-- <img class="menu__dropdown-chevron-up" src="../images/chevron-up-.svg" alt="chevron-up"> -->
-                        </label>
-                        <div class="dropdown__man-drop">
+                        </label> -->
+                        <!-- <div class="dropdown__man-drop">
                             <span class="man__drop-span">Person Info</span>
                             <h3 class="man__drop-h3">FirstName: Алексей</h3>
                             <h3 class="man__drop-h3">LastName: Николаевич</h3>
                             <h4 class="man__drop-h4">e-mail: alex@gmail.com</h4>
                             <h4 class="man__drop-h4">Phone: +8 6161651</h4>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -141,8 +147,7 @@
                     <a href="./Все продукты.html"><span class="aksiya-span">Все продукты &#8250;</span></a>
                 </div>
                 <div class="product__wrapper">
-                    <div class="cards__item-images"></div>
-
+                    <div class="product__wrapper-item"></div>
                 </div>
             </div>
         </div>
@@ -221,25 +226,25 @@
                 </div>
                 <div class="maps__wrapper-images">
                     <div class="maps__wrapper-item">
-                        <iframe
+                        <iframe class="maps__img"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26652.504500217452!2d53.372323659913896!3d65.32263588049032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4472340bbf53f20d%3A0x6aaf90d406ef7886!2sShchel&#39;yaiur%2C%20Komi%2C%20Rossiya!5e0!3m2!1suz!2s!4v1691442357958!5m2!1suz!2s"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="maps__wrapper-item">
-                        <iframe
+                        <iframe class="maps__img"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6669.530014756295!2d53.18474018525535!3d65.29733184852104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447249e2718cd461%3A0x25c0f625da4e30ed!2sVertep%2C%20Komi%2C%20Rossiya%2C%20169473!5e0!3m2!1suz!2s!4v1691442316566!5m2!1suz!2s"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="maps__wrapper-item">
-                        <iframe
+                        <iframe class="maps__img"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.6147859005546!2d53.27676230383397!3d65.29483089409435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235dd2ca590b3%3A0xc633232da326cfaf!2sKrasnobor%2C%20Komi%2C%20Rossiya%2C%20169473!5e0!3m2!1suz!2s!4v1691442282504!5m2!1suz!2s"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="maps__wrapper-item">
-                        <iframe
+                        <iframe class="maps__img"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170.71140469430952!2d53.363456660898!3d65.2770707250739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235f6103aec6d%3A0xdcf187c907b8f607!2sTsirk!5e0!3m2!1suz!2s!4v1691442244099!5m2!1suz!2s"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -314,7 +319,8 @@
         <div class="container">
             <div class="footer__main-wrapper">
                 <div class="footer-wrapper-images">
-                   <a href="./index.html"><img class="fooeter__logojon" src="../images/footer_logojon.svg" alt="logojon"></a> 
+                    <a href="./index.html"><img class="fooeter__logojon" src="../images/footer_logojon.svg"
+                            alt="logojon"></a>
                 </div>
                 <div class="footer__wrapper-menu">
                     <ul class="footer__menu-ul">
@@ -380,6 +386,27 @@
         </div>
     </div>
     <!-- FOOTER FINISH// -->
+    <!-- LOGIN START// -->
+    <div class="modal">
+        <div class="container">
+            <div class="modal__images">
+                <img class="modal__img" src="./images/circle-xmark-solid.svg" alt="circle-xmark-solid">
+            </div>
+            <div class="modal__content">
+                <h1 class="modal__content-heading">Вход</h1>
+                <form action="">
+                    <span class="form__span">Телефон</span>
+                    <input type="tel"required>
+                    <input type="button" value="Вход">
+                    <div class="form__btn">
+                        <button class="btn">Регистрация</button>
+                        <button class="btn">Забыли пароль?</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- LOGIN FINISH// -->
     <script src="./js/product-data.js"></script>
     <script src="./js/categories-data.js"></script>
     <script src="./js/main.js"></script>

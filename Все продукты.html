@@ -14,15 +14,17 @@
         <div class="container">
             <div class="navbar__wrapper">
                 <div class="navbar__wrapper-images">
-                    <a href="index.html"><img class="logojon" src="../images/home-logojon.svg"
-                            alt="home-logojon"></a>
+                    <a href="index.html"><img class="logojon" src="../images/home-logojon.svg" alt="home-logojon"></a>
                     <a href="./index.html"><img class="logojon-tablet" src="../images/home-logojon-tablet.svg"
                             alt="home-logojon-tablet"></a>
                 </div>
                 <div class="navbar__wrapper-menu">
                     <div class="menu__btn">
-                        <button class="wrapper__menu-button btn"><span
-                                class="menu__btn-span">&#9776;</span>Каталог</button>
+                        <div class="wrapper__menu-button">
+                            <span class="menu__btn-span">&#9776;</span>
+                            <a class="wrapper__menu-link" href="./Категории.html"><span
+                                    class="menu__btn-span">Каталог</span></a>
+                        </div>
                         <span class="menu__btn-span-tablet">&#9776;</span>
                         <div class="categories__menu">
                             <!-- <ul class="categories__menu-ul">
@@ -71,8 +73,7 @@
                     <div class="form__search">
                         <form action="#">
                             <label for="search">
-                                <input class="form__search-inp" type="search" name="search" id="search"
-                                    placeholder="Найти товар">
+                                <input type="text" class="form__search-inp" placeholder="Search products..." />
                                 <img class="form__search-img" src="../images/search.svg" alt="search">
                             </label>
                         </form>
@@ -89,8 +90,11 @@
                             <a href="./Все продукты.html"> <span class="logotip__item-span">продукты</span></a>
                         </div>
                         <div class="menu__logotip-item">
-                            <a href="./Корзина.html"><img class="logotip__item-img" src="../images/korzinka_icon.svg"
-                                    alt="heart_img"> </a>
+                            <div class="cart__wrapper">
+                                <span class="cart">0</span>
+                                <a href="./Корзина.html"><img class="logotip__item-img" src="../images/korzinka_icon.svg"
+                                        alt="heart_img"> </a>
+                            </div>
                             <a href="./Корзина.html"> <span class="logotip__item-span">Корзина</span></a>
                         </div>
                     </div>
@@ -121,7 +125,6 @@
             <div class="main__wrapper">
                 <div class="products-header">
                     <h1>All products: <span class="total-products"></span></h1>
-                    <input type="text" class="search-input" placeholder="Search products..." />
                 </div>
                 <div class="products-row"></div>
 
@@ -129,9 +132,9 @@
         </div>
     </section>
     <script src="./js/product-data.js"></script>
-    <script src="./js/categories-data.js"></script> 
-    <script src="./js/products.js"></script>
+    <script src="./js/categories-data.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
 
 </body>
 

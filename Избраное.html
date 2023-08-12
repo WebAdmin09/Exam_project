@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,23 @@
     <title>Избраное</title>
     <link rel="stylesheet" href="./css/Избраное.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="navbar__wrapper">
                 <div class="navbar__wrapper-images">
-                    <a href="./index.html"><img class="logojon" src="../images/home-logojon.svg"
-                            alt="home-logojon"></a>
+                    <a href="./index.html"><img class="logojon" src="../images/home-logojon.svg" alt="home-logojon"></a>
                     <a href="./index.html"><img class="logojon-tablet" src="../images/home-logojon-tablet.svg"
                             alt="home-logojon-tablet"></a>
                 </div>
                 <div class="navbar__wrapper-menu">
                     <div class="menu__btn">
-                        <button class="wrapper__menu-button btn"><span
-                                class="menu__btn-span">&#9776;</span>Каталог</button>
+                        <div class="wrapper__menu-button">
+                            <span class="menu__btn-span">&#9776;</span>
+                            <a class="wrapper__menu-link" href="./Категории.html"><span
+                                    class="menu__btn-span">Каталог</span></a>
+                        </div>
                         <span class="menu__btn-span-tablet">&#9776;</span>
                         <div class="categories__menu">
                             <!-- <ul class="categories__menu-ul">
@@ -77,8 +81,11 @@
                     </div>
                     <div class="menu__logotip">
                         <div class="menu__logotip-item">
-                            <a href="./Избраное.html"><img class="logotip__item-img" src="../images/heart_img.svg"
-                                    alt="heart_img"></a>
+                            <div class="cart__wrapper">
+                                <span class="cartlike">0</span>
+                                <a href="./Избраное.html"><img class="logotip__item-img" src="../images/heart_img.svg"
+                                        alt="heart_img"></a>
+                            </div>
                             <a href="./Избраное.html"><span class="logotip__item-span">Избранное</span> </a>
                         </div>
                         <div class="menu__logotip-item">
@@ -87,8 +94,11 @@
                             <a href="./Все продукты.html"> <span class="logotip__item-span">продукты</span></a>
                         </div>
                         <div class="menu__logotip-item">
-                            <a href="./Корзина.html"><img class="logotip__item-img" src="../images/korzinka_icon.svg"
-                                    alt="heart_img"> </a>
+                            <div class="cart__wrapper">
+                                <span class="cart">0</span>
+                                <a href="./Корзина.html"><img class="logotip__item-img"
+                                        src="../images/korzinka_icon.svg" alt="heart_img"> </a>
+                            </div>
                             <a href="./Корзина.html"> <span class="logotip__item-span">Корзина</span></a>
                         </div>
                     </div>
@@ -113,7 +123,17 @@
             </div>
         </div>
     </nav>
+
+    <section class="like-section">
+        <div class="container">
+            <div class="like__wrapper"></div>
+        </div>
+    </section>
+
+
     <script src="./js/categories-data.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/favorite.js"></script>
 </body>
+
 </html>
